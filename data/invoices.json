@@ -1,0 +1,30 @@
+[
+    {
+        "invoice_id": "INV-1001",
+        "client_id": "C001",
+        "amount": 5000,
+        "status": "Paid",
+        "date": "2026-05-01"
+    },
+    {
+        "invoice_id": "INV-1002",
+        "client_id": "C001",
+        "amount": 7500,
+        "status": "Overdue",
+        "date": "2026-04-15"
+    },
+    {
+        "invoice_id": "INV-1003",
+        "client_id": "C002",
+        "amount": 12000,
+        "status": "Paid",
+        "date": "2026-06-01"
+    },
+    {
+        "invoice_id": "INV-1004",
+        "client_id": "C003",
+        "amount": 3500,
+        "status": "Unpaid",
+        "date": "2026-06-10"
+    }
+]

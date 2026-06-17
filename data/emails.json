@@ -1,0 +1,18 @@
+[
+    {
+        "email_id": "E-901",
+        "client_id": "C001",
+        "from": "john.acme@example.com",
+        "subject": "Delay in delivery",
+        "body": "Hi team, we are still waiting for the shipment. Can you please check the status?",
+        "date": "2026-06-14"
+    },
+    {
+        "email_id": "E-902",
+        "client_id": "C003",
+        "from": "mike.global@example.com",
+        "subject": "Considering alternatives",
+        "body": "We are evaluating our budget and might pause our contract next quarter.",
+        "date": "2026-06-10"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "ticket_id": "T-501",
+        "client_id": "C001",
+        "subject": "Production Line Integration Issue",
+        "status": "Open",
+        "priority": "High"
+    },
+    {
+        "ticket_id": "T-502",
+        "client_id": "C002",
+        "subject": "API Rate Limit Exceeded",
+        "status": "Resolved",
+        "priority": "Medium"
+    },
+    {
+        "ticket_id": "T-503",
+        "client_id": "C003",
+        "subject": "Billing Discrepancy",
+        "status": "Open",
+        "priority": "High"
+    }
+]

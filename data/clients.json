@@ -1,0 +1,26 @@
+[
+  {
+    "client_id": "C001",
+    "name": "Acme Corp",
+    "industry": "Manufacturing",
+    "contact": "john.acme@example.com",
+    "status": "Active",
+    "total_spend": 50000
+  },
+  {
+    "client_id": "C002",
+    "name": "TechFlow Inc",
+    "industry": "Software",
+    "contact": "sarah.techflow@example.com",
+    "status": "Active",
+    "total_spend": 120000
+  },
+  {
+    "client_id": "C003",
+    "name": "Global Retail",
+    "industry": "Retail",
+    "contact": "mike.global@example.com",
+    "status": "At Risk",
+    "total_spend": 15000
+  }
+]
