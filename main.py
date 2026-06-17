@@ -128,15 +128,13 @@ def send_email(recipient: str, subject: str, body: str) -> str:
 
         # Using Ethereal Email directly 
         smtp_server = "smtp.ethereal.email"
-        smtp_port = 2525
+        smtp_port = 465  # Using SSL port (often works better on Render/Cloud if 587 is blocked)
         
-        server = smtplib.SMTP(smtp_server, smtp_port)
-        server.starttls()
-        server.login(sender_email, sender_password)
-        server.send_message(msg)
-        server.quit()
+        with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
+            server.login(sender_email, sender_password)
+            server.send_message(msg)
         
-        return "Email sent successfully via SMTP."
+        return "Email sent successfully via SMTP SSL."
     except Exception as e:
         return f"Error sending email: {str(e)}"
 
