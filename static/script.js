@@ -3,23 +3,9 @@ const userInput = document.getElementById('user-input');
 const chatContainer = document.getElementById('chat-container');
 const sendButton = document.getElementById('send-button');
 
-// Simple Markdown parser for basic formatting
+// Using marked.js for robust markdown rendering
 function parseMarkdown(text) {
-    let html = text;
-    // Bold
-    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    // Lists
-    html = html.replace(/^\s*[-*]\s+(.*)/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
-    // Paragraphs
-    html = html.replace(/\n\n/g, '</p><p>');
-    // Single line breaks
-    html = html.replace(/\n/g, '<br>');
-    // Headings
-    html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-    html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
-    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
-    return `<p>${html}</p>`;
+    return marked.parse(text, { breaks: true });
 }
 
 function appendMessage(sender, text, isMarkdown = false) {

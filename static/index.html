@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpsPilot - AI Business Operations Assistant</title>
-    <meta name="description" content="OpsPilot is your AI-powered business operations assistant. Manage clients, invoices, tickets, and emails seamlessly.">
+    <meta name="description"
+        content="OpsPilot is your AI-powered business operations assistant. Manage clients, invoices, tickets, and emails seamlessly.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="app-container">
         <aside class="sidebar">
@@ -17,7 +20,12 @@
             </div>
             <nav>
                 <a href="#" class="nav-item active">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+                        </path>
+                    </svg>
                     Chat
                 </a>
             </nav>
@@ -33,20 +41,28 @@
                 <div class="message ai-message">
                     <div class="avatar ai-avatar">OP</div>
                     <div class="message-content">
-                        <p>Hello! I am OpsPilot, your AI business operations analyst. How can I help you manage your clients and operations today?</p>
+                        <p>Hello! I am OpsPilot, your AI business operations analyst. How can I help you manage your
+                            clients and operations today?</p>
                     </div>
                 </div>
             </div>
             <div class="input-area">
                 <form id="chat-form">
-                    <input type="text" id="user-input" placeholder="Ask about a client, or request to send an email..." autocomplete="off" required>
+                    <input type="text" id="user-input" placeholder="Ask about a client, or request to send an email..."
+                        autocomplete="off" required>
                     <button type="submit" id="send-button">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
                     </button>
                 </form>
             </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
