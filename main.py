@@ -128,7 +128,7 @@ def send_email(recipient: str, subject: str, body: str) -> str:
 
         # Using Ethereal Email directly 
         smtp_server = "smtp.ethereal.email"
-        smtp_port = 587
+        smtp_port = 2525
         
         server = smtplib.SMTP(smtp_server, smtp_port)
         server.starttls()
